@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      h2 { border-top: 1px solid green; }
+      section { padding-left: 1em; }
+      code[title] { background-color: #dfdfca; padding: 1em; color: rebeccapurple; display: block; margin-bottom: 2em; }
+      :root > *:not(h2) { margin-left: 2em; }
+    </style>
+
+
+
+    <!-- Webreflection polyfill of custom elements API -->
+    <script src="custom-elements.js"></script>
+
+
+    <!-- Our custom elements -->
+    <script src="contextual.js"></script>
+
+
+</head>
+<body>
+
+  <section>
+    <contextual-actionable data-placement="bottom">
+      <button>Print/Save</button>
+      <contextual-message>This is a test of the Emergency Broadcast System. The broadcasters of your area in voluntary cooperation with the FCC and other authorities (or, in later years, "federal, state and local authorities") have developed this system to keep you informed in the event of an emergency.
+      <contextual-message>
+  </section>
+
+  <section>
+    <contextual-actionable data-placement="right">
+      <button>Print/Save</button>
+      <contextual-message>This is a test of the Emergency Broadcast System. The broadcasters of your area in voluntary cooperation with the FCC and other authorities (or, in later years, "federal, state and local authorities") have developed this system to keep you informed in the event of an emergency.
+      <contextual-message>
+  </section>
+
+  </body>
+</html>
